@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>breaking-bad-widget demo</title>
+    <script src="../build/webcomponents-loader.js"></script>
+    <script src="../build/scoping-shim.min.js"></script>
+    <script src="../build/apply-shim.min.js"></script>
+    <script>
+      {
+        const _customElementsDefine = window.customElements.define;
+        window.customElements.define = (name, cl, conf) => {
+          if (!customElements.get(name)) {
+            _customElementsDefine.call(window.customElements, name, cl, conf);
+          } else {
+            console.warn(`${name} has been defined twice`);
+          }
+        };
+      }
+    </script>
+    <script defer src="../build/component.js"></script>
+    <script type="module" crossorigin="use-credentials">
+      import '../build/demo-build.js';
+    </script>
+  </head>
+
+  <body>
+    <cells-demo-helper>
+      <cells-demo-case heading="Basic" description="Default specs">
+        <template>
+          <breaking-bad-widget></breaking-bad-widget>
+          <script type="module">
+            const breakingWidget = document.querySelector('breaking-bad-widget');
+            breakingWidget.init();
+          </script>
+        </template>
+      </cells-demo-case>
+    </cells-demo-helper>
+  </body>
+</html>

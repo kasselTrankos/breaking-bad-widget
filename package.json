@@ -1,0 +1,42 @@
+{
+  "name": "@lit-training/breaking-bad-widget",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "main": "breaking-bad-widget.js",
+  "dependencies": {
+    "@bbva-web-components/bbva-spinner": "^1.1.1",
+    "@cells-components/cells-i18n-mixin": "^1.2.0",
+    "@cells-components/cells-lit-helpers": "^0.2.4",
+    "@lit-training/breaking-bad-dm": "git+ssh://git@globaldevtools.bbva.com:7999/~thiago.bovi.contractor/breaking-bad-dm.git",
+    "@lit-training/breaking-bad-profile-list": "git+ssh://git@globaldevtools.bbva.com:7999/~thiago.bovi.contractor/breaking-bad-profile-list.git",
+    "lit-element": "^2.0.1"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.1",
+    "@polymer/test-fixture": "^4.0.2",
+    "wct-mocha": "^1.0.0",
+    "mocha": "^5.2.0",
+    "chai": "^4.2.0",
+    "sinon": "^7.2.0",
+    "sinon-chai": "^3.3.0",
+    "@cells-components/cells-demo-helper": "^1.0.12",
+    "@bbva-web-components/bbva-foundations-theme": "^1.0.0",
+    "@cells-components/coronita-icons": "^1.0.0",
+    "@cells-components/cells-sass": "^1.1.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "^7.2.3",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@open-wc/semantic-dom-diff": "^0.11.7",
+    "pixelmatch": "^5.0.2",
+    "pngjs": "^3.4.0",
+    "puppeteer": "^1.17.0",
+    "serve-static": "^1.14.1",
+    "express": "^4.17.1",
+    "express-cache-headers": "^0.1.4",
+    "express-transform-bare-module-specifiers": "^1.0.2",
+    "axe-core": "^3.0.0",
+    "pwa-helpers": "^0.9.0"
+  }
+}

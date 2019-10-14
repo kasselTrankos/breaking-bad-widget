@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>breaking-bad-widget test</title>
+		<script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+		<script src="../node_modules/mocha/mocha.js"></script>
+		<script src="../node_modules/wct-mocha/wct-mocha.js"></script>
+  </head>
+  <body>
+    <script>
+      // Load and run all tests (.html, .js):
+      WCT.loadSuites([
+        'breaking-bad-widget-test.html',
+        'breaking-bad-widget-test.html?wc-shadydom=true&wc-ce=true',
+      ]);
+    </script>
+  </body>
+</html>

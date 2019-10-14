@@ -1,0 +1,17 @@
+@import "node_modules/@cells-components/cells-sass/main";
+
+:host {
+  display: block;
+  box-sizing: border-box;
+  @apply --breaking-bad-widget;
+}
+bbva-spinner {
+  height: 100%;
+}
+
+:host([hidden]), [hidden] {
+  display: none !important;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;}
